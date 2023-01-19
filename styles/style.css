@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Helvetica1;
-    src: url('Fonts/HelveticaLTStd-BoldObl.otf');
+    src: url('../Fonts/HelveticaLTStd-BoldObl.otf');
 }
 
 @font-face {
@@ -20,20 +20,18 @@
     src: url("Fonts/HelveticaWorld-Italic.ttf");
 }
 
-* {
-    padding: 0px;
-    border: 0px;
-}
+
 html, body{
     width: 100vw;
     height: 100vh;
+    background-image: linear-gradient(to top, aqua, purple);
 }
 main {
     width: 100vw;
     height: 100vh;
 }
 section#login {
-    background-image: linear-gradient(to top, aqua, purple);
+    background-color: rgba(255, 255, 255, 0.705);
     width: 250px;
     height: 500px;
     border-radius: 10px;
@@ -53,4 +51,58 @@ section#login div#imagem {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: block;
+}
+
+form {
+    padding: 20px;
+}
+
+div#form h1 {
+    padding: 10px; 
+    font-size: 30px;
+    font-family: Helvetica1;
+}
+div#form p {
+    padding: 10px;
+    font-size: 20px;
+
+}
+div#form label {
+    padding: 0px;
+    padding-top: 20px;
+    font-family: Helvetica1;
+}
+div#form span {
+    padding: 10px;
+}
+div#form input {
+    padding: 15px;
+}
+.campo {
+    position: relative;
+    padding-bottom: 30px;
+}
+.user {
+    background: none;
+    outline: none;
+    border: none;
+    width: 90%;
+    border-bottom: 1px solid black;
+    letter-spacing: 2px;
+}
+
+
+form input[type =submit] {
+    display: block;
+    width: 80%;
+    background-color: rgba(127, 255, 212, 0.445);
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    
+}
+form input[type=submit]:hover {
+    background-color: rgba(0, 255, 255, 0.507);
 }
