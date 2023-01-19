@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Helvetica1;
+    src: url('Fonts/HelveticaLTStd-BoldObl.otf');
+}
+
+@font-face {
+    font-family: Helvetica2;
+    src: url("Fonts/HelveticaLTStd-Bold.otf");
+}
+
+@font-face {
+    font-family: Helvetica3;
+    src: url("Fonts/HelveticaLTStd-Light.otf");
+}
+
+@font-face {
+    font-family: Helvetica4;
+    src: url("Fonts/HelveticaWorld-Italic.ttf");
+}
+
+* {
+    padding: 0px;
+    border: 0px;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+}
+section#login {
+    background-image: linear-gradient(to top, aqua, purple);
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    transition: width .3s,height .3s;
+    transition-timing-function: ease;
+}
+section#login div#imagem {
+    background-image: url(../imagens/pexels-adriaan-greyling-754268.jpg);
+    background-size: cover;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+}
